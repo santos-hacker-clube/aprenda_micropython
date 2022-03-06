@@ -8,7 +8,7 @@ BUTTONPINNUM = 35 # pino 35 de entrada analógica
 LEDPINNUM = 2 # pino do led da placa
 ledState = 1 # estado do led (ligado)
 lastDebounceTime = 0 # ultimo tempo de debounce
-debounceDelay = 0.05 # tempo entre mudanças de estado (5 ms)
+debounceDelay = 0.05 # tempo entre mudanças de estado (50 ms)
 buttonState = 0 # estado do botão do switch
 lastButtonState = 0 # ultimo estado do botão do switch
 
@@ -16,7 +16,7 @@ def setup(): # liga o led pela primeira vez
   ledPin = Pin(LEDPINNUM, Pin.OUT)
   ledPin.value(ledState)
 
-def loop(): # desliga/liga o led se o botão do switch está no estado 1 e o tempo entre as mudanças > 0.5 ms
+def loop(): # desliga/liga o led se o botão do switch está no estado 1 e o tempo entre as mudanças > 0.50 ms
   while True:
     global lastButtonState, lastDebounceTime, ledState, buttonState
     start = time.ticks_ms() # começa a contar o tempo
@@ -28,7 +28,7 @@ def loop(): # desliga/liga o led se o botão do switch está no estado 1 e o tem
     if reading != lastButtonState: # caso o valor seja diferente do anterior
       lastDebounceTime = time.ticks_diff(time.ticks_ms(), start) # atualiza o ultimo tempo entre as entradas
 
-    # se o tempo decorrido menos o ultimo(acima) é o suficiente (> 5ms)
+    # se o tempo decorrido menos o ultimo(acima) é o suficiente (> 50 ms)
     if time.ticks_diff(time.ticks_ms(), start) - lastDebounceTime > debounceDelay: 
       if reading != buttonState: 
         buttonState = reading # muda o estado do botão do switch caso seja um novo valor (0 ou 4095)
