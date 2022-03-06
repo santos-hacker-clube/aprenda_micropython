@@ -1,0 +1,1 @@
+StateChangeDetection, detecta a mudança de estado do botão do switch (pino 35) e, a cada 4 mudanças para LIGADO, acende o led da placa (pino 2).
