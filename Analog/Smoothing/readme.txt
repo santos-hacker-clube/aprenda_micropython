@@ -1,0 +1,1 @@
+Suaviza a leitura de multiplas entradas analógicas.
