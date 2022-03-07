@@ -1,0 +1,1 @@
+Liga um speaker no pino 25 e toca uma sequência de notas(melodia).
