@@ -1,0 +1,1 @@
+Lê uma entrada analógica para gerar uma saída digital PWM.
