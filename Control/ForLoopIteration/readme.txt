@@ -1,0 +1,1 @@
+Código criado para exemplificar o uso do laço for em python.
