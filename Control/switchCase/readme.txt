@@ -1,0 +1,1 @@
+Tradução para python, uma alternativa ao de switch case
