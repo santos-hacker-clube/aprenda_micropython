@@ -1,0 +1,1 @@
+Fading, faz o led acender e apagar aos poucos.

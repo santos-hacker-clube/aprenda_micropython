@@ -1,0 +1,1 @@
+Código demonstrando o uso do if/else em python.
