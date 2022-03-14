@@ -1,1 +1,0 @@
-Código exemplificando o uso do laço while.
