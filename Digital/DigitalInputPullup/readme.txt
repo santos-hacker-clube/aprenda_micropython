@@ -1,5 +1,4 @@
-Realiza a leitura de um sinal digital alterado através do pressionamento
-de um botão, e exibe o resultado da leitura no shell.
+Demonstra o uso de uma entrada digital em modo pull-up.
 
 ** Importante **
 Para este exemplo foi utilizada a placa ESP32.
