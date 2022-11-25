@@ -19,7 +19,7 @@ esp.osdebug(None)
 #nome da rede
 ssid = ''
 #senha da rede
-password = 'camaroAmarelo123@@'
+password = ''
 
 #Classe Wlan recece o parametro para informar que será conectado em uma rede
 station = network.WLAN(network.STA_IF)
